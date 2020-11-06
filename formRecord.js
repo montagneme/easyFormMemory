@@ -106,7 +106,7 @@ function seekDomToFormRecord (formRecord, domMap, loadedMap, time) {
     time++;
   }
   waitLoadDom = null;
-  if (time <= 10) {
+  if (time <= 20) {
     setTimeout(() => {
       seekDomToFormRecord(formRecord, domMap, loadedMap, time);
     }, 200); //200ms查找一次
